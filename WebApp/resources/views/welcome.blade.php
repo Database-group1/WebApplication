@@ -83,6 +83,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <a href="{{url('/advice')}}">野菜の育て方アドバイス</a>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
