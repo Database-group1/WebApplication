@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #333;
+    font-size: 1.6rem;
+    background-image: url(/images/tomato.jpg);
+    
+}
+
+.box13 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.box13 p {
+    margin: 0; 
+    padding: 0;
+}
