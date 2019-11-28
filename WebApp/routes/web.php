@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*-----------------------------------------------------------------*/
+
 Route::get('vegplus', 'VegplusController@index');
 Route::get('vegplus/vegquest', 'VegplusController@question');
 
