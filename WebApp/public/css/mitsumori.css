@@ -1,0 +1,158 @@
+@charset "utf-8";
+/*body{
+    background-color: lightgreen;
+}
+*/
+body{
+    margin: 50px;
+}
+
+/*.head {
+    background-color: rgb(140, 235, 255);
+}*/
+
+nav{
+border-bottom: 1px solid white;
+}
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+text-align: center;
+}
+nav ul li{
+display: table-cell;
+min-width: 50px;
+border-right: 1px solid white;
+}
+nav ul li:first-child{
+border-left: 1px solid white;
+}
+nav ul li a{
+font-size: 20px;
+display: block;
+width: 100%;
+padding: 13px 0;
+text-decoration: none;
+color: black;
+}
+nav ul li a:hover{
+background-color:#F8E750;
+border-bottom: 0px solid #F8E750;
+}
+nav ul li.current{
+font-weight: bold;
+}
+nav ul li.current a{
+border-bottom: 5px solid #00B0F0;
+color: #00B0F0;
+}
+ul.menu__second-level {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+ul.menu__third-level {
+  visibility: hidden;
+  opacity: 0;
+}
+
+ul.menu__fourth-level {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu > li:hover {
+  background: whitesmoke;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.menu__second-level li {
+  display: block;
+  border-top: 1px solid #111;
+}
+
+.menu__third-level li {
+  border-top: 1px solid #111;
+}
+
+.menu__second-level li a:hover {
+  background: #F8E750;
+}
+
+.menu__third-level li a:hover {
+  background: #2a1f1f;
+}
+
+.menu__fourth-level li a:hover {
+  background: #1d0f0f;
+}
+
+/* 下矢印 
+.init-bottom:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 0 15px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}*/
+
+/* floatクリア */
+.menu:before,
+.menu:after {
+  content: " ";
+  display: table;
+}
+
+.menu:after {
+  clear: both;
+}
+
+.menu {
+  *zoom: 1;
+}
+
+.menu > li.menu__single {
+  position: relative;
+}
+
+li.menu__single ul.menu__second-level {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: whitesmoke;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+li.menu__single:hover ul.menu__second-level {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+th,td{
+    border: solid 1px;          /* 枠線指定 */
+}
+ 
+table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+    width:  100%;               /* 幅指定 */
+}
+ 
+th {
+    width:  100px;              /* 幅指定 */
+    text-align: left;           /* 文字の揃え位置指定 */
+}
+ 
+td {
+    text-align:  left;        /* 文字の揃え位置指定 */
+}
