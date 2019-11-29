@@ -198,9 +198,9 @@ $(function(){
 
 <body>
 
-<center>
+
 <div id="map-container"></div>
-</center>
+
 
 </body>
 </html>

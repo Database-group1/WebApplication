@@ -10,7 +10,7 @@ class LandController extends Controller
 {
     public function tomato() 
     {
-        //$lands = Land::all();
+        
 
 	$vegetables = Vegetable::where('id','9')->get();
 

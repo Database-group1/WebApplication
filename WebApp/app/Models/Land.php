@@ -9,4 +9,5 @@ class Land extends Model
     //
     protected $table = 'lands';
  
+
 }
