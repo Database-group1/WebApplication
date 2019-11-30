@@ -4,6 +4,8 @@
     <title>農業チュートリアル</title>
     <link rel="stylesheet" href="{{ asset('/css/rayout.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/colorbox2.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/back_styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/btn_styles.css') }}">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{ asset('/js/colorbox/jquery.colorbox-min.js') }}"></script>
@@ -11,7 +13,10 @@
 
 <body>
 <div class="container">
-    <a href="http://google.com"><img src="{{ asset('/img/vegeplus2.png') }}" id="floatbutton"></a>
+
+    <!-- ベジプラアイコン -->
+    <a href="{{ action('VegplusController@index') }}"><img src="{{ asset('/img/vegeplus2.png') }}" id="floatbutton"></a>
+
     <div class="logo">
 	<p><a href="#"><img src="{{ asset('/img/logo.png') }}"></a></p>
     </div>
@@ -65,79 +70,79 @@
 	<div id="a-gyou"><h2>あ行</h2></div>
 	<div class="box">
 	    <div><img src="{{ asset('/img/ingen.png') }}"><p>インゲン豆</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@kidney_beans') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/ingenmame') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	    <div><img src="{{ asset('/img/edamame2.png') }}"><p>枝豆</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@green_soybean') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/edamame') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
 
 	<div id="ka-gyou"><h2>か行</h2></div>
 	<div class="box">
 	    <div><img src="{{ asset('/img/kabocha.png') }}"><p>かぼちゃ</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@pumpkin') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/kabocha') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	    <div><img src="{{ asset('/img/flower.png') }}"><p>カリフラワー</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@cauliflower') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/karifurawa') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	    <div><img src="{{ asset('/img/kyabetu.png') }}"><p>キャベツ</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@cabbage') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/kyabetsu') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	    <div><img src="{{ asset('/img/kyuuri.png') }}"><p>きゅうり</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@cucumber') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/kyuri') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
 
 	<div id="sa-gyou"><h2>さ行</h2></div>
 	<div class="box">
 	    <div><img src="{{ asset('/img//suika.png') }}"><p>すいか</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@watermelon') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/suika') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
 
 	<div id="ta-gyou"><h2>た行</h2></div>
 	<div class="box">
 	    <div><img src="{{ asset('/img/daikon.png') }}"><p>大根</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@radish') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/daikon') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	    <div><img src="{{ asset('/img/tomato.png') }}"><p>トマト</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@tomato') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/tomato') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
 
 	<div id="na-gyou"><h2>な行</h2></div>
 	<div class="box">
 	    <div><img src="{{ asset('/img/nasu.png') }}"><p>なす</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@eggplant') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/nasu') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
 
 	<div id="ha-gyou"><h2>は行</h2></div>
 	<div class="box">
 	    <div><img src="{{ asset('/img/piman.png') }}"><p>ピーマン</p>
-		<div class='env'><a class="iframe" href="{{ url('/out') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/out') }}">栽培</a></div>
-		<div class='for'><a class="iframe" href="{{ url('/out') }}">農地</a></div>
+		<div class='env'><a class="iframe" href="{{ action('LandController@green_papper') }}">環境</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/piman') }}">栽培</a></div>
+		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
 
