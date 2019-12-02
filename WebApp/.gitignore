@@ -10,7 +10,11 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/public/css/style.css
-/database/migrations
-/config/database.php
 /public/images
+/public/css/style.css
+/routes/web.php
+/config/database.php
+/public/mix-manifest.json
+/webpack.mix.js
+/public/js/app.js
+/database/migrations
