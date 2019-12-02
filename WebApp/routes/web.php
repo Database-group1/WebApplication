@@ -92,8 +92,3 @@ Route::get('vegplus/vegquest/cabbage', 'VegplusController@cabbage');
 Route::get('/out', function () {
     return view('html/out');
 });
-<<<<<<< HEAD
-
-
-=======
->>>>>>> parent of 05f1a1b... Update web.php

@@ -123,7 +123,7 @@
 	    </div>
 	    <div><img src="{{ asset('/img/tomato.png') }}"><p>トマト</p>
 		<div class='env'><a class="iframe" href="{{ action('LandController@tomato') }}">環境</a></div>
-		<div class='adv'><a class="iframe" href="{{ url('/advice/tomato') }}">栽培</a></div>
+		<div class='adv'><a class="iframe" href="{{ url('/advice/tomato_advice') }}">栽培</a></div>
 		<div class='for'><a class="iframe" href="{{ url('/mitsumori') }}">農地</a></div>
 	    </div>
 	</div>
