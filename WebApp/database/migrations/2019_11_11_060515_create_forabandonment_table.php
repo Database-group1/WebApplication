@@ -20,11 +20,12 @@ class CreateForabandonmentTable extends Migration
             $table->string('cityName')->nullable();
             $table->integer('oldCityCode')->nullable();
             $table->string('oldCityName')->nullable();
+            $table->integer('agriculturalLandType');
             $table->integer('matter');
             $table->string('label');
-            $table->double('value_2005', 5, 4);
-            $table->double('value_2010', 5, 4);
-            $table->double('value_2015', 5, 4);
+            $table->integer('value_2005');
+            $table->integer('value_2010');
+            $table->integer('value_2015');
         });
     }
 
