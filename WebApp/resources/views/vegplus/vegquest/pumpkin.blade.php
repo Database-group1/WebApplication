@@ -17,7 +17,7 @@
 
                  </div>
 
-                <div class="pop_btn"><a href= "http://192.168.56.102:8000/vegplus" class="btn-circle-border-double">戻る</a></div>
+                <div class="pop_btn"><a href= "localhost:8000/vegplus" class="btn-circle-border-double">戻る</a></div>
 
           </center>
         </body>

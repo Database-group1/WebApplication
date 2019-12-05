@@ -16,62 +16,62 @@ function GetChecked() {
 
   switch (y) {
     case "sweetred":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/watermelon";
+      location.href = "http://localhost:8000/vegplus/vegquest/watermelon";
       //alert("『赤くて甘いスイカ』");
       break;
 
     case "sweetgreen":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/pumpkin";
+      location.href = "http://localhost:8000/vegplus/vegquest/pumpkin";
       //alert("『緑で甘いカボチャ』");
       break;
 
     case "sweetwhite":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/radish";
+      location.href = "http://localhost:8000/vegplus/vegquest/radish";
       //alert("『白くて甘い大根』");
       break;
 
     case "bitterred":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/eggplant";
+      location.href = "http://localhost:8000/vegplus/vegquest/eggplant";
       //alert("『赤くて苦いナス』");
       break;
 
     case "bittergreen":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/pimento";
+      location.href = "http://localhost:8000/vegplus/vegquest/pimento";
       //alert("『緑で苦いピーマン』");
       break;
 
     case "bitterwhite":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/cauliflower";
+      location.href = "http://localhost:8000/vegplus/vegquest/cauliflower";
       //alert("『白くて苦いカリフラワー』");
       break;
 
     case "sourred":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/tomato";
+      location.href = "http://localhost:8000/vegplus/vegquest/tomato";
       //alert("『赤くて酸っぱいトマト』");
       break;
 
     case "sourgreen":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/kidney";
+      location.href = "http://localhost:8000/vegplus/vegquest/kidney";
       //alert("『緑で酸っぱいインゲン豆』");
       break;
 
     case "sourwhite":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/mandragora";
+      location.href = "http://localhost:8000/vegplus/vegquest/mandragora";
       //alert("『白くて酸っぱいマンドラゴラ』");
       break;
 
     case "nonered":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/soybean";
+      location.href = "http://localhost:8000/vegplus/vegquest/soybean";
       //alert("『赤くて無味な枝豆』");
       break;
 
     case "nonegreen":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/cucumber";
+      location.href = "http://localhost:8000/vegplus/vegquest/cucumber";
       //alert("『緑で無味なキュウリ』");
       break;
 
     case "nonewhite":
-      location.href = "http://192.168.56.102:8000/vegplus/vegquest/cabbage";
+      location.href = "http://localhost:8000/vegplus/vegquest/cabbage";
       //alert("『白くて無味なキャベツ』");
       break;
 

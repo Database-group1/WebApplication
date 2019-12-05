@@ -17,7 +17,7 @@
 
                  </div>
 
-                <div class="normal_btn"><a href= "http://192.168.56.102:8000/vegplus" class="btn-square">戻る</a></div>
+                <div class="normal_btn"><a href= "localhost:8000/vegplus" class="btn-square">戻る</a></div>
 
                 <div class="mgr-10"></div>
 

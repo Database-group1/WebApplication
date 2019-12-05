@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+iconst mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,5 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js') // resources/js/app.js, public/js
+    .js('resources/js/japan-map/jquery.japan-map.min.js', 'public/js')
+    .js('resources/js/japan-map/jquery.japan-map.js', 'public/js')
     .scripts('resources/js/sample.js', 'public/js/sample.js')
     .sass('resources/sass/app.scss', 'public/css');
