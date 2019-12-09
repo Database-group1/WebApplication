@@ -11,7 +11,7 @@
 
 $dsn = 'mysql:dbname=WebApp;host=localhost;charset=utf8';
 $user = 'root';
-$password = '';
+$password = 'P@ssw0rd';
 
 
 try{
